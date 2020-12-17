@@ -3,7 +3,7 @@ import Navbar from './components/navbar'
 import Home from './pages/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Stores from './pages/Stores'
-import Discount from './pages/Discount'
+import AllStores from './pages/AllStores'
 import {Switch,Route,BrowserRouter } from 'react-router-dom';
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/Stores" component={Stores} />
-          <Route path="/Discount" component={Discount} />
+          <Route path="/AllStores" component={AllStores} />
         </Switch>
       </BrowserRouter>
     </div>
