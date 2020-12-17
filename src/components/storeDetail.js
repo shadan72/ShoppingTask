@@ -1,17 +1,18 @@
 import React from 'react'
-
-export default function StoreDetail({store})
+import {Button,Card} from 'react-bootstrap'
+export default function StoreDetail({storeBrand})
 {
     return (
 <div>
-
-<h1 className="">{store.id}</h1>
-<h1 className="">{store.name}</h1>
-<img
-  src={store.logo}
-  alt={store.name}
-/>
-
+<div>
+    <Card style={{ width: '18rem' }}>
+        <Card.Img width="200px" height="200px" src={storeBrand.logo} alt={storeBrand.name} />
+      <Card.Body>
+        <Card.Title>{storeBrand.name}</Card.Title>
+        <Button>More details</Button>
+      </Card.Body>
+    </Card>
+  </div>
 </div>
     )
 }
